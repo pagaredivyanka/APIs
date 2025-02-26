@@ -1,0 +1,20 @@
+1. types of API
+Open/Public - available for general use.
+Partner - restricted to strategic business partners to communicate with each other.
+Internal - available to the organization's internal developers.
+Private - similar to internal API (the difference is in some cases they can be accessible outside of the organization).
+Composite - set of requests in a single call. allow sending single request instead of multiple requests to sever.
+
+2. characteristics
+  a. stateful -
+    - maintain client state between requests.
+    - difficult to scale.
+    - faster - because previous clients stored data.
+    - careful handling of session data is necessary.
+    - fault tolerance - loss of server can cause session data loss.
+  b. stateless -
+    - treach each request as separate/independent.
+    - more scalable.
+    - faster for simple requests.
+    - simple to develop and maintain.
+    - Fault tolerance - loss of server does not impact user sessions.
